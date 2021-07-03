@@ -1,0 +1,13 @@
+<ul className="clearfix">
+	<li *ngFor="let product of products.data">
+		<div class="thumbnail">
+			<img src={{product.product_image}} class="fixwidth" alt="product image" />
+			<div class="caption clearfix">
+				<h5>{{product.product_name}}</h5>
+				<div class="product__price">{{product.product_price}} euros</div>
+				<div class="product__button-wrap">
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>
