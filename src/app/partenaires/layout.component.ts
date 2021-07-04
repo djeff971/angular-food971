@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'dashboard.component.html',
-  styleUrls: ['dashboard.css']
+  templateUrl: 'dashboard.component.html'
 })
 export class LayoutComponent {}
