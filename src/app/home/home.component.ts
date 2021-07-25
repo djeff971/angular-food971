@@ -12,6 +12,7 @@ import { CartService } from '../_services/cart.service';
 })
 export class HomeComponent {
   user: User;
+  searchText;
   public cartflag: boolean = false;
   public sortBy: string = '';
   public sortOption: string = 'product_name|asc';
