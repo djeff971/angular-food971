@@ -1,3 +1,31 @@
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<header>
+
+	<div class="container">
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+				<svg class="bi me-2" width="40" height="32">
+					<use xlink:href="#bootstrap" />
+				</svg>
+				<span class="fs-4">Caribbean collect</span>
+			</a>
+
+			<ul class="nav nav-pills">
+				<div class="search-hero">
+					<input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
+				</div>
+				<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link_CC">Features</a></li>
+				<li class="nav-item"><a href="#" class="nav-link_CC">Pricing</a></li>
+				<li class="nav-item"><a href="#" class="nav-link_CC">FAQs</a></li>
+				<li class="nav-item"><a href="#" class="nav-link_CC">About</a></li>
+			</ul>
+		</header>
+	</div>
+</header>
+
+
 <div class="p-4">
 	<div class="container">
 		<h1>Hi {{user.firstName}}!</h1>
