@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+main > .container {
+    padding: 60px 15px 0;
+  }
+  
+  body {
+    background-color: #F2F2F2;
+  }
+  
+  titre_p1 {
+    color: #F27405;
+  }
+  
+  .nav-link_CC {
+    display: block;
+    padding: .5rem 1rem;
+    color: #63A61F;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #F27405;
+  }
+  
+  .fs-4 {
+    font-size: 1.5rem !important;
+    color: #F27405;
+  }
+  
+  .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  .panel-body {
+    padding: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
