@@ -10,9 +10,16 @@ import { MatChipsModule}  from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AppRoutingModule } from "./app-routing.module";
+
+
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './_components/search-bar/search-bar.component';
 import { HomePageComponent  } from './_components/home-page/home-page.component';
+import { DetailComponent } from './_components/commercants/detail.component';
+
+
+
 import { DataService } from './_services/search.service';
 
 
@@ -21,7 +28,8 @@ import { DataService } from './_services/search.service';
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomePageComponent
+    HomePageComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule, 
@@ -34,7 +42,8 @@ import { DataService } from './_services/search.service';
     MatAutocompleteModule,
     MatChipsModule,
     MatFormFieldModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    AppRoutingModule
   ],
   providers: [
     DataService
