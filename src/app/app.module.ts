@@ -10,27 +10,22 @@ import { MatChipsModule}  from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from "./app-routing.module";
+import { HomePageModule } from "./_components/home-page/home-page.module";
+
+
+
 
 
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './_components/search-bar/search-bar.component';
 import { HomePageComponent  } from './_components/home-page/home-page.component';
-import { DetailComponent } from './_components/commercants/detail.component';
-
-
 
 import { DataService } from './_services/search.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchBarComponent,
-    HomePageComponent,
-    DetailComponent
-  ],
   imports: [
     BrowserModule, 
     BrowserAnimationsModule,
@@ -44,6 +39,11 @@ import { DataService } from './_services/search.service';
     MatFormFieldModule,
     Ng2SearchPipeModule,
     AppRoutingModule
+  ],
+  declarations: [
+    AppComponent,
+    SearchBarComponent,
+    HomePageComponent
   ],
   providers: [
     DataService
